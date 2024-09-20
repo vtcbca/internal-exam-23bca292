@@ -22,3 +22,7 @@ sqlite> select * from stud1;
 9|DEV|270|209
 10|JAY|271|210
 
+sqlite> .mode column
+sqlite> .mode csv
+sqlite> .output C:/23bca292/stud1.txt
+sqlite> select * from stud1;
