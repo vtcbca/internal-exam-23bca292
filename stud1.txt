@@ -1,0 +1,28 @@
+sqlite> .open my.db
+sqlite> create table stud1(sid primary key,sname,seat no,block no);
+sqlite> insert into stud1 values(1,'ARYAN',292,201);
+sqlite> insert into stud1 values(2,'YUG',265,202);
+sqlite> insert into stud1 values(3,'NAIMISH',266,203);
+sqlite> insert into stud1 values(4,'VIDHAN',263,204);
+sqlite> insert into stud1 values(5,'SUJAL',256,205);
+sqlite> insert into stud1 values(6,'HET',267,206);
+sqlite> insert into stud1 values(7,'TUSHAR',268,207);
+sqlite> insert into stud1 values(8,'ALOK',269,208);
+sqlite> insert into stud1 values(9,'DEV',270,209);
+sqlite> insert into stud1 values(10,'JAY',271,210);
+sqlite> select * from stud1;
+1|ARYAN|292|201
+2|YUG|265|202
+3|NAIMISH|266|203
+4|VIDHAN|263|204
+5|SUJAL|256|205
+6|HET|267|206
+7|TUSHAR|268|207
+8|ALOK|269|208
+9|DEV|270|209
+10|JAY|271|210
+
+sqlite> .mode column
+sqlite> .mode csv
+sqlite> .output C:/23bca292/stud1.txt
+sqlite> select * from stud1;
